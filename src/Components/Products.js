@@ -5,23 +5,42 @@ import { useParams, useSearchParams } from 'react-router-dom';
 const Products = () => {
   const { Product } = useParams();
   const [searchParams] = useSearchParams();
-  console.log(searchParams);
+  const query = searchParams.get("filter");
   useEffect(()=>{
     window.scrollTo(0,0);
   },[])
-  return (
-
-    <div className='flex flex-col items-center '>
-        <h1 className='mt-5 text-[.7rem] font-semibold text-pink-800'>{Product}</h1>
-        <div className='flex flex-wrap justify-center sm:gap-10 py-10'>
-        { Product === "Mist-And-Body" ? (mistBody.map(product => (
-            <SingleProduct key={product.id} value={product}/>
-        ))):(
-          <div className='text-3xl font-semibold animate-pulse'>Coming soon</div>
-        )}
-        </div>
-    </div>
-  )
+  if(!query){
+    return (
+  
+      <div className='flex flex-col items-center '>
+          <h1 className='mt-5 text-[.7rem] font-semibold text-pink-800'>{Product}</h1>
+          <div className='flex flex-wrap justify-center sm:gap-10 py-10'>
+          { Product === "Mist-And-Body" ? (mistBody.map(product => (
+              <SingleProduct key={product.id} value={product}/>
+          ))):(
+            <div className='text-3xl font-semibold animate-pulse'>Coming soon</div>
+          )}
+          </div>
+      </div>
+    )
+  }
+  else{
+    const filteredArray = mistBody.filter((item)=>{
+      return item.type === query;
+    })
+    return (
+      <div className='flex flex-col items-center '>
+          <h1 className='mt-5 text-[.7rem] font-semibold text-pink-800'>{Product} / {query}</h1>
+          <div className='flex flex-wrap justify-center sm:gap-10 py-10'>
+          { Product === "Mist-And-Body" ? (filteredArray.map(product => (
+              <SingleProduct key={product.id} value={product}/>
+          ))):(
+            <div className='text-3xl font-semibold animate-pulse'>Coming soon</div>
+          )}
+          </div>
+      </div>
+    )
+  }
 }
 
 export default Products
