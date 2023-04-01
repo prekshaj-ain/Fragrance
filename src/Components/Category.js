@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const Category = () => {
   return (
     <div className='my-10 py-10 flex flex-col gap-5 justify-center items-center '>
-        <h1 className='font-oliver font-bold text-3xl tracking-wider'>Scent-sational moments await</h1>
+        <h1 className='font-oliver font-bold text-2xl tracking-wider'>Scent-sational moments await</h1>
         <div className='flex gap-1 md:w-3/5'>
             <div className='flex-1 bg-black hover:opacity-70 z-10 opacity-100 cursor-pointer relative'>
                 <img src="/Assets/mists.jpg" alt="Mists" className='object-fill h-full w-full z-0'/>

@@ -7,7 +7,7 @@ const Slide = ({ value }) => {
       <div className="h-full basis-1/2 ">
         <img src={value?.img} alt="" className="h-full" />
       </div>
-      <div className="basis-1/2 p-12 flex flex-col items-center">
+      <div className="basis-1/2 p-6 flex flex-col items-center">
         <h2 className="font-bold font-oliver text-5xl tracking-wider">{value?.keyword1}</h2>
         <h2 className="font-bold font-oliver text-5xl tracking-wider">
           {value?.keyword2}
