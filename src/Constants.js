@@ -1,4 +1,4 @@
-export const data = [
+export const mistBody = [
     {
         id: 1,
         name: "Amber romance Fragrance Lotion",
