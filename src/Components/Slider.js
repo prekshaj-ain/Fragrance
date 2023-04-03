@@ -5,6 +5,7 @@ import Slide from './Slide'
 
 const Slider = () => {
     const [slideIndex,setSlideIndex] = useState(0);
+    const [touchPosition,setTouchPosition] = useState(null);
     const handleClick = (direction)=>{
         if(direction === 'left'){
             setSlideIndex(slideIndex > 0 ? slideIndex - 1 : 1)
@@ -15,13 +16,32 @@ const Slider = () => {
     const goToSlide = (index)=>{
         setSlideIndex(index);
     }
+    const onTouchStart = (e)=>{
+        const touchDown = e.touches[0].clientX
+        setTouchPosition(touchDown);
+    }
+    const onTouchMove = (e)=>{
+        const touchDown = touchPosition;
+        if(touchDown === null){
+            return;
+        }
+        const currentTouch = e.touches[0].clientX;
+        const diff = currentTouch - touchDown;
+        if(diff > 5){
+            setSlideIndex(slideIndex === 0  ? slideIndex + 1 : 0)
+        }
+        if(diff < -5){
+            setSlideIndex(slideIndex > 0 ? slideIndex - 1 : 1)
+        }
+        setTouchPosition(null);
+    }
   return (
     <div>
-    <div className='w-full h-4/5 flex relative overflow-x-scroll scrollbar-hide scroll-smooth'>
+    <div className='w-full h-4/5 flex relative overflow-x-hidden' >
         {slideIndex === 1 && <div onClick={()=>handleClick("left")} className='hidden md:flex w-8 h-8 rounded-full bg-white justify-center items-center absolute top-0 bottom-0 m-auto opacity-60 cursor-pointer z-10'>
             <ArrowLeftOutlined/>
         </div>}
-        <div className={`flex ${slideIndex === 0 ? '-translate-x-0' : '-translate-x-[100vw]'} transition-transform`}>
+        <div className={`flex ${slideIndex === 0 ? '-translate-x-0' : '-translate-x-[100vw]'} transition-transform`} onTouchStart={onTouchStart} onTouchMove={onTouchMove}>
         {
             slideData.map(data => (
                 <Slide key={data.id} value={data}/> 
