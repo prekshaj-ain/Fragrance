@@ -8,11 +8,11 @@ const Category = () => {
         <div className='flex mx-1 gap-1 md:w-3/5'>
             <Link to='/Mist-And-Body?filter=Mist' className='flex-1 bg-black hover:opacity-70 z-10 opacity-100 cursor-pointer relative'>
                 <img src="/Assets/mists.jpg" alt="Mists" className='object-fill h-full w-full z-0'/>
-                <Link to='/Mist-And-Body?filter=Mist' className='absolute font-bold left-5 bottom-5 bg-white px-3 py-1 rounded-sm hover:bg-pink-300'>Mists</Link>
+                <div to='/Mist-And-Body?filter=Mist' className='absolute font-bold left-5 bottom-5 bg-white px-3 py-1 rounded-sm hover:bg-pink-300'>Mists</div>
             </Link>
             <Link to='/Mist-And-Body?filter=Lotion' className='flex-1 bg-black hover:opacity-70 z-10 opacity-100 cursor-pointer relative'>
                 <img src="/Assets/lotions.jpg" alt="Lotions" className='object-fill h-full w-full z-5'/>
-                <Link to='/Mist-And-Body?filter=Lotion' className='absolute font-bold left-5 bottom-5 bg-white px-3 py-1 rounded-sm hover:bg-pink-300'>Lotions</Link>
+                <div className='absolute font-bold left-5 bottom-5 bg-white px-3 py-1 rounded-sm hover:bg-pink-300'>Lotions</div>
             </Link>
         </div>
     </div>
