@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Accessories, mistBody, skincare } from "../Constants";
+import { Accessories, eyes, face, hair, lips, mistBody, nails, skincare } from "../Constants";
 import SingleProduct from "./SingleProduct";
 import { useParams, useSearchParams } from "react-router-dom";
 const Products = () => {
@@ -32,6 +32,26 @@ const Products = () => {
             skincare.map((item) => (
               <SingleProduct key={item.id} value={item} />
             ))}
+          {Product === "Hair" &&
+            hair.map((item) => (
+              <SingleProduct key={item.id} value={item} />
+            ))}
+          {Product === "Nails" &&
+            nails.map((item) => (
+              <SingleProduct key={item.id} value={item} />
+            ))}
+          {Product === "Face" &&
+            face.map((item) => (
+              <SingleProduct key={item.id} value={item} />
+            ))}
+          {Product === "Eyes" &&
+            eyes.map((item) => (
+              <SingleProduct key={item.id} value={item} />
+            ))}
+          {Product === "Lips" &&
+            lips.map((item) => (
+              <SingleProduct key={item.id} value={item} />
+            ))}
         </div>
       </div>
     );
@@ -42,8 +62,23 @@ const Products = () => {
         return item.type === query;
       });
     }
-    if(Product === 'Skincare'){
+    else if(Product === 'Skincare'){
       filteredArray = skincare.filter((item) => {
+        return item.type === query;
+      });
+    }
+    else if(Product === 'Face'){
+      filteredArray = face.filter((item) => {
+        return item.type === query;
+      });
+    }
+    else if(Product === 'Eyes'){
+      filteredArray = eyes.filter((item) => {
+        return item.type === query;
+      });
+    }
+    else if(Product === 'Lips'){
+      filteredArray = lips.filter((item) => {
         return item.type === query;
       });
     }
@@ -62,7 +97,7 @@ const Products = () => {
               />
             ))}
             {
-              Product === 'Skincare' &&
+              (Product === 'Skincare' || Product === 'Face' || Product === 'Eyes' || Product === 'Lips' )&&
               filteredArray.map((product) => (
               <SingleProduct
                 key={product.id}
@@ -70,6 +105,7 @@ const Products = () => {
               />
             )) 
             }
+            
         </div>
       </div>
     );

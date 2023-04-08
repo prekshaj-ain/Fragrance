@@ -317,6 +317,287 @@ export const skincare = [
         price: 215,
         type: "Scrub"
     },
+    {
+        id: 22,
+        name: 'SWISS BEAUTY GEL LOTION',
+        description: 'Rehydrates skin cells, nourishes and moisturizes, lighten the skin tone, protects from pollution',
+        img: '/Assets/gel-lotion.jpg',
+        price: 350,
+        type: "Moisturizer"
+    },
+    
+];
+export const hair = [
+    {
+        id: 1,
+        name: 'Derma Klay advance ayurvedic Hairfall Shampoo 310 ml',
+        description: 'It will nourish your scalp.it helps to reduce hairfall.our shampoo are effective ,natural & gentle on hair.it controls revitalizes hair and restore health',
+        img: '/Assets/shampoo-2.png',
+        price: 490,
+    },
+    {
+        id: 2,
+        name: 'DERMA KLAY morracan argan shampoo 310ml',
+        description: 'It protect hair from damage.it is mainly for dry and frizzy hair.it repair and strengthening hair',
+        img: '/Assets/shampoo-1.png',
+        price: 510,
+    },
+]
+export const nails = [
+    {
+        id: 1,
+        name: 'MARS COLOR BOMB NAIL POLISH',
+        description: 'mars color bomb nailpaint gives an unbeatabke colour payoff along with chip free,long lasting and gel shine effect',
+        img: '/Assets/nail-polish-1.jpg',
+        price: '50 each'
+    },
+    {
+        id: 2,
+        name: 'POP-UP NAIL POLISH',
+        description: 'Providing trendy hues, Perfect for an on-the-go look regardless of your mood.',
+        img: '/Assets/nail-polish-2.jpg',
+        price: '99 each'
+    },
+]
+export const face = [
+    {
+        id: 1,
+        name: 'MARS Air Brush Compact Powder Compact',
+        description: 'presenting a creamy compact that can double up as your foundation!Can be used both wet and dry to give a flawless coverage that stays on.Contains finely milled powder that is so soft and light in texture that it blends in like a dream on skin.',
+        img: '/Assets/powder-1.jpg',
+        price: 250,
+        type: 'Face-Powder'
+    },
+    {
+        id: 2,
+        name: 'Mars 2 in 1 skin perfecting powder',
+        description: 'mars skin perfecting powder has the perfect soft and smooth texture to set the foundation for long hours',
+        img: '/Assets/powder-2.jpg',
+        price: 240 ,
+        type: 'Face-Powder'
+    },
+    {
+        id: 3,
+        name: 'OIL CONTROL COMPACT POWDER',
+        description: 'Get the best skin illuminating and oil controlling compact powder for your daily makeup by Swiss Beauty.',
+        img: '/Assets/powder-3.jpg',
+        price: 320 ,
+        type: 'Face-Powder'
+    },
+    {
+        id: 4,
+        name: 'Loose Powder | Trend Setting Powder',
+        description: 'MARS Trend Setting Loose Powder is a silky powder with a touch of sheer coverage to set makeup for lasting wear. These powders are also perfect for "baking".',
+        img: '/Assets/powder-4.jpg',
+        price: 199 ,
+        type: 'Face-Powder'
+    },
+    {
+        id: 5,
+        name: 'Goddess Of Flawless BB Serum - 32 Cortado',
+        description: 'This makeup-skincare hybrid formula with a unique blend of natural ingredients instantly blurs imperfections and improves skin texture. The SPF 15 formula offers a shield from harsh sun rays',
+        img: '/Assets/BB-1.webp',
+        price: 630 ,
+        type: 'BB-and-CC-Cream'
+    },
+    {
+        id: 6,
+        name: 'Rage For Coverage 24Hr Foundation - 15 Cappuccino (Light, Cool Undertone)',
+        description: ' ultra-performing, high coverage foundation whose rich, creamy texture blends into your skin beautifully and delivers a seamless matte finish that lasts up to 24 hours.',
+        img: '/Assets/foundation-2.webp',
+        price: 720 ,
+        type: 'Foundation'
+    },
+    {
+        id: 7,
+        name: 'Swiss Beauty Shiny Pearl Water Drop Blemish Balm BB Foundation',
+        description: 'skin perfectioner that comes packed in a travel friendly tube. It can be used as a primer, foundation, moisturizer, sunscreen and concealer. It works miraculously on the skin and corrects uneven skin tone, dark spots and pigmentation.',
+        img: '/Assets/BB-3.avif',
+        price: 180 ,
+        type: 'BB-and-CC-Cream'
+    },
+    {
+        id: 8,
+        name: 'MARS Matte Mousse Foundation',
+        description: 'The unique color-adapting technology allows you to get a perfect match to your skin tone. It is also equipped with sun filters that shield your perfect complexion. Let the imperfections disappear and let your skin glow!',
+        img: '/Assets/foundation-4.webp',
+        price: 280 ,
+        type: 'Foundation'
+    },
+    {
+        id: 9,
+        name: 'Mars BB Cream Skin Perfection Color Correcting Foundation',
+        description: 'MARS Blemish Balm cream is a lightweight, skin-tone adapting formula, created for the perfect "No Makeup" makeup look. This cream effortlessly blends into the skin and creates a veil-like finish.',
+        img: '/Assets/BB-5.jpg',
+        price: 199,
+        type: 'BB-and-CC-Cream'
+    },
+    {
+        id: 10,
+        name: 'MARS HD 2IN1 Nutration For Skin Lotion Foundation',
+        description: 'This foundations also function as a moisturizer, sunscreen, astringent or base layer for more complex cosmetics. Foundation can even skin tone, cover redness and provide a blank canvas for blush, bronzer, contour and highlighter',
+        img: '/Assets/foundation-6.jpg',
+        price: 280 ,
+        type: 'Foundation'
+    },
+]
+export const eyes = [
+    {
+        id:1,
+        name: 'INTENSE GEL KAJAL',
+        description: 'This Swiss beauty Intense gel kajal is supersaturated and glides smoothly, preferences giving you an elegant look. The best thing about this product is it also can be used as an eyeshadow. ',
+        img : [
+            "/Assets/kajal-1.webp",
+            "/Assets/kajal-2.webp",
+            "/Assets/kajal-3.webp",
+        ],
+        color : ["#3b9290","#6d8579","#4d3828"],
+        shade : ["TURQUOISE","GREEN","BROWN"],
+        price: 349,
+        type: "Kajal",
+        extend: true
+    },
+    {
+        id:2,
+        name: 'Kohl Of Honour Intense Kajal',
+        description: 'Ready to elevate your eye game to many notches above the ordinary? Step up to the world of extreme-wear, waterproof kajals with the SUGAR Kohl Of Honour Intense Kajal.',
+        img : [
+            "/Assets/kajal-21.webp",
+            "/Assets/kajal-22.webp",
+            "/Assets/kajal-23.webp",
+        ],
+        color : ["#000","#321f10","#00224a"],
+        shade : ["01 Black Out (Black)","02 Brown Bag (Chocolate Brown)","04 True Blue (Navy Blue)"],
+        price: 225,
+        type: "Kajal",
+        extend: true
+    },
+    {
+        id: 3,
+        name: 'Ipop Kajal Pencil',
+        description: 'Coloressence Kajal Pencil is a unique formula which is soft and soothing to the eyes. Lasts upto 12 hours',
+        img: '/Assets/kajal-31.webp',
+        price: '130',
+        type: 'Kajal'
+    },
+    {
+        id:4,
+        name: 'The City Paradise',
+        description: 'MARS City Paradise opens up to reveal a bright mix of 9 eyeshadows, a highlighter, blusher, bronzer and face powder that can make you fall in love with the city just a bit more.',
+        img : [
+            "/Assets/eyeshadow-11.avif",
+            "/Assets/eyeshadow-12.avif",
+            "/Assets/eyeshadow-13.avif",
+            "/Assets/eyeshadow-14.avif",
+            "/Assets/eyeshadow-15.avif",
+            "/Assets/eyeshadow-16.avif",
+        ],
+        menu: ["Mumbai","Dilli","Chandigarh","Kolkata","Lucknow","Bengluru"],
+        price: 349,
+        type: "Eyeshadow",
+        extend: true
+    },
+    {
+        id: 5,
+        name: '15 Color Eyeshadow Palette | Fantasy 15',
+        description: 'MARS Fantasy 15, is a 15 Color Eyeshadow palette which has 15 stunning eyeshadows in a combination of matte and shimmers. The shadows are soft to touch, offer great one swipe pigmentation and are long lasting on the lids. For best results, let your creativity unleash.',
+        img: '/Assets/eyeshadow-2.avif',
+        price: 299,
+        type: 'Eyeshadow'
+    },
+    {
+        id: 6,
+        name: 'PRECISION WATERPROOF EYELINER',
+        description: 'Colorbar Precision Waterproof Eyeliner defines your eyes through thick and thin. Adding to the eye-drama, this quick-drying waterproof eyeliner delivers intense black strokes without smudging, flaking, or cracking. ',
+        img: '/Assets/eyeliner-1.webp',
+        price: 390,
+        type: 'Eyeliner'
+    },
+    {
+        id:7,
+        name: 'HYDRA EYE SERUM PATCH',
+        description: 'Say goodbye to the wrinkles that reflects the visible  sign of aging on face.',
+        img : [
+            "/Assets/eye-patch-11.webp",
+            "/Assets/eye-patch-12.webp",
+        ],
+        color : ["#f1c438","#3e7432"],
+        shade : ["GOLD","AELOVERA"],
+        price: 255,
+        type: "Eye-Care",
+        extend: true
+    }
+];
+export const lips = [
+    {
+        id:1,
+        name: 'Tipsy Lips Moisturizing Balm',
+        description: 'Need a nourishing product that serves up yumminess too? No worries! Presenting, SUGAR Tipsy Lips Moisturizing Lip Balm in awesome flavours that are enriched with Vitamin E, Jojoba Oil, Shea Butter, and SPF.',
+        img : [
+            "/Assets/balm-11.webp",
+            "/Assets/balm-12.webp",
+            "/Assets/balm-13.webp",
+        ],
+        color : ["#9ad7c8","#c10823","#e84e0e"],
+        shade : ["01 Mojito","02 Cosmopolitan","06 Mango Margarita"],
+        price: 180,
+        type: "Lip-Balm",
+        extend: true
+    },
+    {
+        id:2,
+        name: 'Lip Tart',
+        description: 'Resist eating these sumptuous lip tarts that are ideal for repairing dry and chapped lips. The lip tarts are enriched with Kokum Butter that not only nourishes the lips but also makes them look shiny and supple.',
+        img : [
+            "/Assets/balm-21.webp",
+            "/Assets/balm-22.webp",
+            "/Assets/balm-23.webp",
+        ],
+        color : ["#b02264","#a71d23","#871a0d"],
+        shade : ["Strawberry Cheesecake","Berries N Cream","Chocolate Raspberry"],
+        price: 120,
+        type: "Lip-Balm",
+        extend: true
+    },
+    {
+        id:3,
+        name: 'Smudge Me Not Liquid Lipstick',
+        description: 'Dress up your lips in a richly pigmented, silky smooth swipe of our SUGAR Smudge Me Not Liquid Lipstick that offers transferproof, full-coverage with a single glide. Its super-matte, liquid formula packed with vitamin E goodness nourishes and protects your lips throughout the day',
+        img : [
+            "/Assets/lipstick-11.webp",
+            "/Assets/lipstick-12.webp",
+            
+        ],
+        color : ["#76101c","#6c2640"],
+        shade : ["01 Brazen Raisin (Burgundy)","17 Fiery Berry (Marsala)"],
+        price: 450,
+        type: "Liquid-Lipstick",
+        extend: true
+    },
+    {
+        id:4,
+        name: 'MARS Poppins Lip Crayon',
+        description : 'MARS Retractable Poppins Lip Crayon are the perfect Kiss Proof Lip Colours to achieve that pouty flirtatious look. ',
+        img : [
+            "/Assets/lipstick-21.webp",
+            "/Assets/lipstick-22.webp",
+            "/Assets/lipstick-23.webp",
+            "/Assets/lipstick-24.webp",
+        ],
+        color : ["#BA6C84","#89473B","#CB4055","#9B4E6E"],
+        shade : ["06 Blushing Nude","14 Dripping Syrup","15 Foxy Red","09 Berry Wine"],
+        price: 199,
+        type: "Lip-Crayon",
+        extend: true
+    },
+    {
+        id: 5,
+        name: 'MARS CREAMY MATTE LIPSTICK',
+        description: 'From a classy red lip to a deep grungy vibe, MARS Creamy Matte Lipstick comes in a wide variety of shades to suit every personality and mood that you have. A silky glide that settles into a matte finish for that soft feather touch look.',
+        img: "/Assets/lipstick-3.jpg",
+        price: "199 each",
+        type: "Liquid-Lipstick"
+    }
 ]
 export const slideData = [
     {
