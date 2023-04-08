@@ -15,7 +15,7 @@ const MenuItems = ({items}) => {
         {items.submenu ? (
             <>
                 <Link to={items.url}>{items.title}</Link>
-                <Dropdown submenus={items.submenu} dropdown={dropDown}/>
+                <Dropdown submenus={items.submenu} dropdown={dropDown} onClick={()=>setDropDown(false)}/>
             </>
         ) : (
             <Link to={items.url}>{items.title}</Link>
